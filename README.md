@@ -11,6 +11,7 @@ The apps are organized into two categories:
 | Project | Description |
 |---------|-------------|
 | [01 - Counter App](./mini-projects/01-counter-app) | Basic counter using `useState`, with increment, decrement, and reset functionality |
+| [02 - Theme Toggle App](./mini-projects/02-theme-toggle) | Toggle between light and dark mode using `useState` and conditional styling |
 
 ---
 
@@ -42,7 +43,7 @@ npm start
 Replace `project-folder-name` with the folder you want to run, for example:
 
 ```bash
-cd mini-projects/01-counter-app
+cd mini-projects/02-theme-toggle
 ```
 
 ---
