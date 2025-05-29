@@ -12,6 +12,7 @@ The apps are organized into two categories:
 |---------|-------------|
 | [01 - Counter App](./mini-projects/01-counter-app) | Basic counter using `useState`, with increment, decrement, and reset functionality |
 | [02 - Theme Toggle App](./mini-projects/02-theme-toggle) | Toggle between light and dark mode using `useState` and conditional styling |
+| [03 - Simple Contact Form](./mini-projects/03-simple-form-handler) | A basic contact form with name, email, and message input. Displays submitted data and includes a reset option |
 
 ---
 
