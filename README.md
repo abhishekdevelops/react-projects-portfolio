@@ -9,17 +9,18 @@ The apps are organized into two categories:
 ## 📦 Mini Projects (Logic-Focused)
 
 | Project | Description |
-|---------|-------------|
+|--------|-------------|
 | [01 - Counter App](./mini-projects/01-counter-app) | Basic counter using `useState`, with increment, decrement, and reset functionality |
 | [02 - Theme Toggle App](./mini-projects/02-theme-toggle) | Toggle between light and dark mode using `useState` and conditional styling |
-| [03 - Simple Contact Form](./mini-projects/03-simple-form-handler) | A basic contact form with name, email, and message input. Displays submitted data and includes a reset option |
+| [03 - Simple Contact Form](./mini-projects/03-simple-form-handler) | A basic contact form with form handling and reset using React state |
+| [04 - Show/Hide Password](./mini-projects/04-show-hide-password) | Toggle password visibility with a button using `useState` |
 
 ---
 
 ## 🌟 Major Projects (Scalable)
 
 | Project | Description |
-|---------|-------------|
+|--------|-------------|
 | React Dashboard (coming soon) | Multi-page dashboard using React Router and JSONPlaceholder APIs |
 
 ---
@@ -44,7 +45,7 @@ npm start
 Replace `project-folder-name` with the folder you want to run, for example:
 
 ```bash
-cd mini-projects/02-theme-toggle
+cd mini-projects/04-show-hide-password
 ```
 
 ---
