@@ -48,7 +48,7 @@ npm start
 Replace `project-folder-name` with the folder you want to run, for example:
 
 ```bash
-cd mini-projects/05-live-character-counter
+cd mini-projects/06-basic-calculator
 ```
 
 ---
