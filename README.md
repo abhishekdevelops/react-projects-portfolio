@@ -16,7 +16,7 @@ The apps are organized into two categories:
 | [04 - Show/Hide Password](./mini-projects/04-show-hide-password) | Toggle password visibility using `useState` and conditional rendering |
 | [05 - Live Character Counter](./mini-projects/05-live-character-counter) | Tracks character count in a textarea with real-time updates |
 | [06 - Basic Calculator](./mini-projects/06-basic-calculator) | Performs basic arithmetic operations and handles input validation |
-
+| [07 - Todo App with LocalStorage](./mini-projects/07-todo-app-localstorage) | Persistent todo list using `useState`, `useEffect`, and `localStorage` |
 
 ---
 
