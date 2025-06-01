@@ -17,6 +17,7 @@ The apps are organized into two categories:
 | [05 - Live Character Counter](./mini-projects/05-live-character-counter) | Tracks character count in a textarea with real-time updates |
 | [06 - Basic Calculator](./mini-projects/06-basic-calculator) | Performs basic arithmetic operations and handles input validation |
 | [07 - Todo App with LocalStorage](./mini-projects/07-todo-app-localstorage) | Persistent todo list using `useState`, `useEffect`, and `localStorage` |
+| [08 - Quote Generator](./mini-projects/08-quote-generator) | Displays random quotes from a local array using `useState` |
 
 ---
 
@@ -48,7 +49,7 @@ npm start
 Replace `project-folder-name` with the folder you want to run, for example:
 
 ```bash
-cd mini-projects/06-basic-calculator
+cd mini-projects/08-quote-generator
 ```
 
 ---
