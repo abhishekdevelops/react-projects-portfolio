@@ -11,3 +11,7 @@ root.render(
   </React.StrictMode>
 );
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 00ba287 (Add 08 - Quote Generator (local version))
