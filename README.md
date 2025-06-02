@@ -18,6 +18,7 @@ The apps are organized into two categories:
 | [06 - Basic Calculator](./mini-projects/06-basic-calculator) | Performs basic arithmetic operations and handles input validation |
 | [07 - Todo App with LocalStorage](./mini-projects/07-todo-app-localstorage) | Persistent todo list using `useState`, `useEffect`, and `localStorage` |
 | [08 - Quote Generator](./mini-projects/08-quote-generator) | Displays random quotes from a local array using `useState` |
+| [09 - Weather App](./mini-projects/09-weather-app) | Live weather info using `wttr.in` API with loading state and error handling |
 
 ---
 
@@ -44,16 +45,3 @@ The apps are organized into two categories:
 cd mini-projects/project-folder-name
 npm install
 npm start
-```
-
-Replace `project-folder-name` with the folder you want to run, for example:
-
-```bash
-cd mini-projects/08-quote-generator
-```
-
----
-
-## 🎯 Goal
-
-This portfolio is part of my React learning journey to become a professional frontend developer. I am building it project-by-project to demonstrate my hands-on experience in React.
