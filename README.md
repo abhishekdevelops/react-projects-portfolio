@@ -45,3 +45,16 @@ The apps are organized into two categories:
 cd mini-projects/project-folder-name
 npm install
 npm start
+```
+
+Replace `project-folder-name` with the folder you want to run, for example:
+
+```bash
+cd mini-projects/09-weather-app
+```
+
+---
+
+## 🎯 Goal
+
+This portfolio is part of my React learning journey to become a professional frontend developer. I am building it project-by-project to demonstrate my hands-on experience in React.
