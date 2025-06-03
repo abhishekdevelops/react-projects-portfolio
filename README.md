@@ -20,6 +20,7 @@ The apps are organized into two categories:
 | [08 - Quote Generator](./mini-projects/08-quote-generator) | Displays random quotes from a local array using `useState` |
 | [09 - Weather App](./mini-projects/09-weather-app) | Live weather info using `wttr.in` API with loading state and error handling |
 | [10 - Image Gallery with Filter](./mini-projects/10-image-gallery) | Dynamic image gallery with category-based filtering using local JSON and `useState` |
+| [11 - FAQ Accordion](./mini-projects/11-faq-accordion) | Toggle questions and answers open/close with accordion-style interaction using `useState` |
 
 ---
 
@@ -46,12 +47,10 @@ The apps are organized into two categories:
 cd mini-projects/project-folder-name
 npm install
 npm start
-```
 
-Replace `project-folder-name` with the folder you want to run, for example:
 
 ```bash
-cd mini-projects/10-image-gallery
+cd mini-projects/11-faq-accordion
 ```
 
 ---
