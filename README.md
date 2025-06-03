@@ -19,6 +19,7 @@ The apps are organized into two categories:
 | [07 - Todo App with LocalStorage](./mini-projects/07-todo-app-localstorage) | Persistent todo list using `useState`, `useEffect`, and `localStorage` |
 | [08 - Quote Generator](./mini-projects/08-quote-generator) | Displays random quotes from a local array using `useState` |
 | [09 - Weather App](./mini-projects/09-weather-app) | Live weather info using `wttr.in` API with loading state and error handling |
+| [10 - Image Gallery with Filter](./mini-projects/10-image-gallery) | Dynamic image gallery with category-based filtering using local JSON and `useState` |
 
 ---
 
@@ -50,7 +51,7 @@ npm start
 Replace `project-folder-name` with the folder you want to run, for example:
 
 ```bash
-cd mini-projects/09-weather-app
+cd mini-projects/10-image-gallery
 ```
 
 ---
