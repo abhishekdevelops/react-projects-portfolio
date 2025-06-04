@@ -52,7 +52,7 @@ npm start
 
 
 ```bash
-cd mini-projects/11-faq-accordion
+cd mini-projects/12-stopwatch-timer
 ```
 
 ---
