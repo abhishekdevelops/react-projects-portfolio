@@ -46,7 +46,7 @@ A simple and functional stopwatch app built with React. This app allows you to s
 
 1. Clone the repo
 ```bash
-git clone https://github.com/your-username/12-stopwatch-timer.git
+git clone https://github.com/abhishekdevelops/12-stopwatch-timer.git
 cd 12-stopwatch-timer
 ```
 
