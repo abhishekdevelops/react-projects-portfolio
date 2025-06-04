@@ -14,19 +14,6 @@ A clean and functional stopwatch app built with React. This project features sta
 
 ---
 
-## 📁 Files Included
-
-This mini project is not a standalone React app. It only includes the core logic files:
-
-```
-App.js
-index.js
-```
-
-> 📌 Use these inside an existing Create React App environment (like your portfolio).
-
----
-
 ## 🧠 Tech Stack
 
 - React  
