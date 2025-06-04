@@ -21,6 +21,8 @@ The apps are organized into two categories:
 | [09 - Weather App](./mini-projects/09-weather-app) | Live weather info using `wttr.in` API with loading state and error handling |
 | [10 - Image Gallery with Filter](./mini-projects/10-image-gallery) | Dynamic image gallery with category-based filtering using local JSON and `useState` |
 | [11 - FAQ Accordion](./mini-projects/11-faq-accordion) | Toggle questions and answers open/close with accordion-style interaction using `useState` |
+| [12 - Stopwatch Timer](./mini-projects/12-stopwatch-timer) | Start, stop, and reset a timer with MM:SS format and interval cleanup using React hooks |
+
 
 ---
 
