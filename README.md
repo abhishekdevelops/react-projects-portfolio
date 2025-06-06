@@ -22,6 +22,8 @@ The apps are organized into two categories:
 | [10 - Image Gallery with Filter](./mini-projects/10-image-gallery) | Dynamic image gallery with category-based filtering using local JSON and `useState` |
 | [11 - FAQ Accordion](./mini-projects/11-faq-accordion) | Toggle questions and answers open/close with accordion-style interaction using `useState` |
 | [12 - Stopwatch Timer](./mini-projects/12-stopwatch-timer) | Start, stop, and reset a timer with MM:SS format and interval cleanup using React hooks |
+| [13 - Notes App with CRUD](./mini-projects/13-notes-app-crud) | Create, edit, and delete notes with persistent `localStorage` and responsive UI using `useState` and `useEffect` |
+
 
 
 ---
@@ -52,7 +54,7 @@ npm start
 
 
 ```bash
-cd mini-projects/12-stopwatch-timer
+cd mini-projects/13-notes-app-crud
 ```
 
 ---
