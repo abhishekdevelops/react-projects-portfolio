@@ -2,9 +2,10 @@
 
 This repository contains a collection of my React.js projects, built to strengthen my frontend development skills and showcase my work.
 
-The apps are organized into two categories:
+The apps are organized into three categories:
 
 ---
+
 ## 📦 Mini Projects (Logic-Focused)
 
 | Project | Description |
@@ -24,6 +25,14 @@ The apps are organized into two categories:
 | [13 - Notes App with CRUD](./mini-projects/13-notes-app-crud) | Create, edit, and delete notes with persistent `localStorage` and responsive UI using `useState` and `useEffect` |
 | [14 - Expense Tracker](./mini-projects/14-expense-tracker) | Add income and expenses, calculate total balance, and persist data using `localStorage`, `useState`, and `useEffect` |
 | [15 - Multi-Step Form](./mini-projects/15-multistep-form) | Step-based form to collect personal and contact info with validation and email regex using `useState` |
+
+---
+
+## ⚙️ Intermediate Projects
+
+| Project | Description |
+|---------|-------------|
+| [01 - Movie Search App](./intermediate-projects/01-movie-search-app) | Search movies using OMDB API with input state, loading/error states, and result display using `fetch` and `useState` |
 
 ---
 
@@ -50,7 +59,9 @@ The apps are organized into two categories:
 cd mini-projects/project-folder-name
 npm install
 npm start
+```
 
+Example:
 
 ```bash
 cd mini-projects/15-multistep-form
