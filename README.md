@@ -53,7 +53,7 @@ npm start
 
 
 ```bash
-cd mini-projects/14-expense-tracker
+cd mini-projects/15-multistep-form
 ```
 
 ---
