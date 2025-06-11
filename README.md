@@ -23,7 +23,7 @@ The apps are organized into two categories:
 | [12 - Stopwatch Timer](./mini-projects/12-stopwatch-timer) | Start, stop, and reset a timer with MM:SS format and interval cleanup using React hooks |
 | [13 - Notes App with CRUD](./mini-projects/13-notes-app-crud) | Create, edit, and delete notes with persistent `localStorage` and responsive UI using `useState` and `useEffect` |
 | [14 - Expense Tracker](./mini-projects/14-expense-tracker) | Add income and expenses, calculate total balance, and persist data using `localStorage`, `useState`, and `useEffect` |
-
+| [15 - Multi-Step Form](./mini-projects/15-multi-step-form) | Step-based form to collect personal and contact info with validation and email regex using `useState` |
 
 ---
 
