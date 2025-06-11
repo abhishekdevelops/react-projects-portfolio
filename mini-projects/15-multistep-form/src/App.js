@@ -60,7 +60,7 @@ function App() {
 
       {step === 2 && (
         <>
-          <h2>Step 2:Contact Details</h2>
+          <h2>Step 2: Contact Details</h2>
 
           <input
             type="email"
