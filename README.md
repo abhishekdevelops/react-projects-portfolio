@@ -35,14 +35,13 @@ The apps are organized into three categories:
 | [01 - Movie Search App](./intermediate-projects/01-movie-search-app) | Search movies using OMDB API with input state, loading/error states, and result display using `fetch` and `useState` |
 | [02 - Blog Post Editor](./intermediate-projects/02-blog-post-editor) | Create, edit, and delete blog posts using `useState` and `localStorage` with clean form handling and component structure |
 
-
 ---
 
 ## 🌟 Major Projects (Scalable)
 
 | Project | Description |
 |---------|-------------|
-| React Dashboard (coming soon) | Multi-page dashboard using React Router and JSONPlaceholder APIs |
+| [01 - React Dashboard API](./major-projects/01-react-dashboard-api) | Multi-page dashboard using React Router and JSONPlaceholder APIs. Includes routes for posts, users, comments, todos, and logout with full API integration and clean component structure. |
 
 ---
 
@@ -51,6 +50,8 @@ The apps are organized into three categories:
 - React.js
 - JavaScript (ES6+)
 - React Hooks (`useState`, `useEffect`)
+- React Router
+- API Integration (JSONPlaceholder, OMDB)
 - Git & GitHub
 
 ---
@@ -58,7 +59,7 @@ The apps are organized into three categories:
 ## 🛠️ How to Run Any Project
 
 ```bash
-cd mini-projects/project-folder-name
+cd project-folder-name
 npm install
 npm start
 ```
