@@ -33,6 +33,8 @@ The apps are organized into three categories:
 | Project | Description |
 |---------|-------------|
 | [01 - Movie Search App](./intermediate-projects/01-movie-search-app) | Search movies using OMDB API with input state, loading/error states, and result display using `fetch` and `useState` |
+| [02 - Blog Post Editor](./intermediate-projects/02-blog-post-editor) | Create, edit, and delete blog posts using `useState` and `localStorage` with clean form handling and component structure |
+
 
 ---
 
