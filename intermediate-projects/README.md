@@ -19,7 +19,8 @@ This section contains **intermediate-level React apps** that go beyond basic log
 | Project | Description |
 |---------|-------------|
 | [01 - Movie Search App](./01-movie-search-app) | Search for movies using the OMDB API. Includes loading, error handling, and responsive card layout. |
-| 02 - Drag and Drop Todo App *(Coming Soon)* | Manage tasks with drag-and-drop using `react-beautiful-dnd` and persistent state. |
+| [02 - Blog Post Editor](./02-blog-post-editor) | A local blog post manager with add, edit, and delete features. Uses `useState`, `useEffect`, and localStorage for persistence. |
+| 03 - Drag and Drop Todo App *(Coming Soon)* | Manage tasks with drag-and-drop using `react-beautiful-dnd` and persistent state. |
 
 ---
 
