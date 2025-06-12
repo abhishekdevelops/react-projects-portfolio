@@ -1,0 +1,16 @@
+.nav-link {
+  color: #333;
+  text-decoration: none;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  border-bottom: 2px solid blue;
+  color: #007bff;
+}
+
+nav.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
