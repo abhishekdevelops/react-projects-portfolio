@@ -1,1 +1,16 @@
+# Ignore dependencies
+node_modules/
+
+# Ignore builds
+build/
+dist/
+
+# Editor settings
+.vscode/
+.DS_Store
+
+# Env files
+.env
+
+# Ignore all local projects you don’t want Git to track
 mini-projects/rough-practice/
