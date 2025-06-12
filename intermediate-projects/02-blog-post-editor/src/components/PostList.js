@@ -1,4 +1,3 @@
-// components/PostList.js
 import React from "react";
 
 function PostList({ posts, onEdit, onDelete }) {

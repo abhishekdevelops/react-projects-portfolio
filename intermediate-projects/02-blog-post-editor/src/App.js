@@ -1,4 +1,3 @@
-// App.js
 import React, { useState, useEffect } from "react";
 import PostForm from "./components/PostForm";
 import PostList from "./components/PostList";
@@ -7,13 +6,11 @@ function App() {
   const [posts, setPosts] = useState([]);
   const [currentPost, setCurrentPost] = useState(null);
 
-  // Load posts from localStorage
   useEffect(() => {
     const saved = JSON.parse(localStorage.getItem("posts")) || [];
     setPosts(saved);
   }, []);
 
-  // Save posts to localStorage
   useEffect(() => {
     localStorage.setItem("posts", JSON.stringify(posts));
   }, [posts]);
@@ -23,12 +20,12 @@ function App() {
   };
 
   const updatePost = (updatedPost) => {
-    setPosts(posts.map(p => p.id === updatedPost.id ? updatedPost : p));
+    setPosts(posts.map((p) => (p.id === updatedPost.id ? updatedPost : p)));
     setCurrentPost(null);
   };
 
   const deletePost = (id) => {
-    setPosts(posts.filter(p => p.id !== id));
+    setPosts(posts.filter((p) => p.id !== id));
   };
 
   const editPost = (post) => {

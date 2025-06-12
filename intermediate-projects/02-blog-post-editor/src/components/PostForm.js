@@ -1,4 +1,3 @@
-// components/PostForm.js
 import React, { useState, useEffect } from "react";
 
 function PostForm({ addPost, updatePost, currentPost }) {
