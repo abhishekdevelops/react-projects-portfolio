@@ -23,6 +23,8 @@ npm install
 npm start
 ```
 
+🔗 **Live Demo:** [https://show-hide-password-rho.vercel.app/](https://show-hide-password-rho.vercel.app/)
+
 ---
 
 This app is part of my [React Projects Portfolio](https://github.com/abhishekdevelops/react-projects-portfolio).
