@@ -91,4 +91,15 @@ App will run at: [http://localhost:3000](http://localhost:3000)
 
 ---
 
+
+🔐 **Demo Login Credentials**
+
+Use the following credentials to access the dashboard:
+
+- **Username:** `admin`
+- **Password:** `1234`
+
+ ---
+
+
 This project is part of my [React Projects Portfolio](https://github.com/abhishekdevelops/react-projects-portfolio)
