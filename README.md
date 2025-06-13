@@ -70,6 +70,15 @@ The apps are organized into three categories:
 
 ---
 
+### 🧪 Demo Login Credentials (for Dashboard Project)
+
+**Project 18: React Dashboard (API)**  
+Use the following credentials to log in:
+
+- **Username:** `admin`
+- **Password:** `1234`
+
+
 ## 🧠 Tech Stack
 
 - React.js
