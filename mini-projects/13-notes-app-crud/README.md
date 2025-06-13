@@ -70,6 +70,11 @@ App will run at: [http://localhost:3000](http://localhost:3000)
 Type in a note and click **Add Note**. You can later click **Edit** to update it or **Delete** to remove it.  
 All changes are saved automatically in your browser using localStorage.
 
+
+
+🔗 **Live Demo:** [https://notes-app-crud-gray.vercel.app/](https://notes-app-crud-gray.vercel.app/)
+
+
 ---
 
 ## 📚 What I Learned
