@@ -69,6 +69,10 @@ App will run at: [http://localhost:3000](http://localhost:3000)
 Click **Start** to begin the timer, **Stop** to pause, and **Reset** to return to 00:00.  
 A message appears below the timer while it’s actively running.
 
+
+🔗 **Live Demo:** [https://stopwatch-timer-psi.vercel.app/](https://stopwatch-timer-psi.vercel.app/)
+
+
 ---
 
 ## 📚 What I Learned
