@@ -78,6 +78,8 @@ Use the following credentials to log in:
 - **Username:** `admin`
 - **Password:** `1234`
 
+---
+
 
 ## 🧠 Tech Stack
 
