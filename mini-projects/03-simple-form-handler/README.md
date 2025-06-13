@@ -24,6 +24,9 @@ npm install
 npm start
 ```
 
+🔗 **Live Demo:** [https://simple-form-handler.vercel.app/](https://simple-form-handler.vercel.app/)
+
+
 ---
 
 This app is part of my [React Projects Portfolio](https://github.com/abhishekdevelops/react-projects-portfolio).
