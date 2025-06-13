@@ -23,6 +23,9 @@ npm install
 npm start
 ```
 
+🔗 **Live Demo:** [https://basic-calculator-rosy.vercel.app/](https://basic-calculator-rosy.vercel.app/)
+
+
 ---
 
 This app is part of my [React Projects Portfolio](https://github.com/abhishekdevelops/react-projects-portfolio).
