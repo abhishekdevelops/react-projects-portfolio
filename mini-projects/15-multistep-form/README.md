@@ -72,6 +72,9 @@ App will run at: [http://localhost:3000](http://localhost:3000)
 - Improved confidence in handling basic form validation and UI logic in React
 - How to use regular expressions (regex) for validating email input  
 
+---
+
+🔗 **Live Demo:** [https://multi-step-form-rho-eight.vercel.app/](https://multi-step-form-rho-eight.vercel.app/)
 
 ---
 
