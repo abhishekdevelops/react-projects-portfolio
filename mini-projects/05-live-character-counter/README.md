@@ -22,6 +22,8 @@ npm install
 npm start
 ```
 
+🔗 **Live Demo:** [https://character-counter-two-teal.vercel.app/](https://character-counter-two-teal.vercel.app/)
+
 ---
 
 This app is part of my [React Projects Portfolio](https://github.com/abhishekdevelops/react-projects-portfolio).
