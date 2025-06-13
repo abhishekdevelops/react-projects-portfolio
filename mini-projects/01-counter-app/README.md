@@ -20,6 +20,10 @@ A simple React counter app built with functional components and the `useState` h
 npm install
 npm start
 ```
+---
+
+🔗 **Live Demo:** [https://counter-app-ecru-xi.vercel.app/](https://counter-app-ecru-xi.vercel.app/)
+
 
 ---
 
