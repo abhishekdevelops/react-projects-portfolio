@@ -73,6 +73,11 @@ App will run at: [http://localhost:3000](http://localhost:3000)
 - How to handle loading and error states effectively
 - Improved skills in building real-world UI layouts with React
 
+
+---
+
+🔗 **Live Demo:** [https://movie-search-app-one-blue.vercel.app/](https://movie-search-app-one-blue.vercel.app/)
+
 ---
 
 This app is part of my [React Projects Portfolio](https://github.com/abhishekdevelops/react-projects-portfolio)
