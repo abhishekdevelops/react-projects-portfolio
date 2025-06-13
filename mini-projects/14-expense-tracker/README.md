@@ -73,6 +73,7 @@ App will run at: [http://localhost:3000](http://localhost:3000)
 - How to use `useEffect` smartly with dependency arrays and guard flags
 - Improved skills in handling form inputs, CRUD operations, and UI layout
 
+---
 
 
 🔗 **Live Demo:** [https://expense-tracker-tau-lac.vercel.app/](https://expense-tracker-tau-lac.vercel.app/)
