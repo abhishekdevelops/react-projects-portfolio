@@ -50,7 +50,6 @@ This will start the app at `http://localhost:3000/`
 
 Filter by clicking on the category buttons to see only the relevant images.
 
----
 
 
 🔗 **Live Demo:** [https://image-gallery-alpha-teal.vercel.app/](https://image-gallery-alpha-teal.vercel.app/)
