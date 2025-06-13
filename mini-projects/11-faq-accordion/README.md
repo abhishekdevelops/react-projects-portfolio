@@ -37,6 +37,10 @@ This will start the app at `http://localhost:3000/`
 
 Click any question to expand or collapse the answer in a clean accordion layout.
 
+
+🔗 **Live Demo:** [https://faq-accordion-pi-nine.vercel.app/](https://faq-accordion-pi-nine.vercel.app/)
+
+
 ---
 
 This app is part of my [React Projects Portfolio](https://github.com/abhishekdevelops/react-projects-portfolio).
