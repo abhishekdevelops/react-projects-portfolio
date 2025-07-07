@@ -15,10 +15,7 @@ function App() {
       <button className="btn increment" onClick={() => setCount(count + 1)}>
         Increment
       </button>
-      <button
-        className="btn decrement"
-        onClick={() => setCount(count > 0 ? count - 1 : 0)}
-      >
+      <button className="btn decrement" onClick={() => setCount(count - 1)}>
         Decrement
       </button>
       <button className="btn reset" onClick={() => setCount(0)}>
