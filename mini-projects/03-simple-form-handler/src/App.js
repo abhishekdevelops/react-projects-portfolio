@@ -1,10 +1,10 @@
 import React, { useState } from "react";
+import "./App.css";
 
 function App() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-
   const [submittedData, setSubmittedData] = useState(null);
 
   const resetForm = () => {
@@ -16,42 +16,28 @@ function App() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    setSubmittedData({
-      name,
-      email,
-      message,
-    });
+    setSubmittedData({ name, email, message });
   };
 
   return (
-    <>
-      <h2 style={{ textAlign: "center", marginTop: "30px", color: "red" }}>
-        Contact Form
-      </h2>
-      <form
-        onSubmit={handleSubmit}
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          maxWidth: "300px",
-          margin: "20px auto",
-          gap: "10px",
-        }}
-      >
+    <div className="form-container">
+      <h2>Contact Form</h2>
+      <form onSubmit={handleSubmit}>
         <input
           type="text"
           id="name"
           value={name}
           onChange={(e) => setName(e.target.value)}
           placeholder="Enter your name"
+          required
         />
         <input
           type="email"
           id="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Enter you email"
+          placeholder="Enter your email"
+          required
         />
         <textarea
           id="message"
@@ -59,17 +45,19 @@ function App() {
           onChange={(e) => setMessage(e.target.value)}
           placeholder="Enter your message"
           rows={4}
+          required
         />
-
-        <button type="submit">Submit</button>
-        <button type="button" onClick={resetForm}>
-          Reset
-        </button>
+        <div className="button-group">
+          <button type="submit">Submit</button>
+          <button type="button" onClick={resetForm} className="reset-btn">
+            Reset
+          </button>
+        </div>
       </form>
 
       {submittedData && (
-        <div style={{ marginTop: "20px", textAlign: "center" }}>
-          <h3 style={{ color: "blue" }}>Submitted Data:</h3>
+        <div className="submitted-data">
+          <h3>Submitted Data:</h3>
           <p>
             <strong>Name:</strong> {submittedData.name}
           </p>
@@ -81,7 +69,8 @@ function App() {
           </p>
         </div>
       )}
-    </>
+    </div>
   );
 }
+
 export default App;
