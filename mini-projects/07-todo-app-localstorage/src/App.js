@@ -1,67 +1,51 @@
-import React, { useEffect, useState } from "react";
+import React, { useState, useEffect } from "react";
+import "./App.css";
 
 function App() {
-  const [input, setInput] = useState("");
+  const [task, setTask] = useState("");
   const [todos, setTodos] = useState(() => {
-    const saved = localStorage.getItem("todos");
-    return saved ? JSON.parse(saved) : [];
+    const savedTodos = localStorage.getItem("todos");
+    return savedTodos ? JSON.parse(savedTodos) : [];
   });
 
   useEffect(() => {
     localStorage.setItem("todos", JSON.stringify(todos));
   }, [todos]);
 
-  const handleAddTodo = () => {
-    if (!input.trim()) return;
-    const newTodo = {
-      id: Date.now(),
-      text: input,
-      completed: false,
-    };
-    setTodos([...todos, newTodo]);
-    setInput("");
+  const addTodo = () => {
+    if (task.trim() === "") return;
+    setTodos([...todos, { id: Date.now(), text: task }]);
+    setTask("");
   };
 
-  const handleToggleComplete = (id) => {
-    setTodos(
-      todos.map((todo) =>
-        todo.id === id ? { ...todo, completed: !todo.completed } : todo
-      )
-    );
-  };
-
-  const handleDeleteTodo = (id) => {
+  const deleteTodo = (id) => {
     setTodos(todos.filter((todo) => todo.id !== id));
   };
 
   return (
-    <>
-      <h2 style={{ textAlign: "center", marginTop: "50px" }}>Todo App</h2>
-      <div style={{ textAlign: "center" }}>
+    <div className="container">
+      <h1 className="heading">Todo App</h1>
+      <div className="input-group">
         <input
           type="text"
-          value={input}
-          onChange={(e) => setInput(e.target.value)}
-          placeholder="Enter a task"
+          value={task}
+          onChange={(e) => setTask(e.target.value)}
+          placeholder="Enter your task"
         />
-        <button onClick={handleAddTodo}>Add</button>
+        <button onClick={addTodo}>Add</button>
       </div>
-      {todos.map((todo) => (
-        <div key={todo.id}>
-          <input
-            type="checkbox"
-            checked={todo.completed}
-            onChange={() => handleToggleComplete(todo.id)}
-          />
-          <span
-            style={{ textDecoration: todo.completed ? "line-through" : "none" }}
-          >
+
+      <ul className="todo-list">
+        {todos.map((todo) => (
+          <li key={todo.id}>
             {todo.text}
-          </span>
-          <button onClick={() => handleDeleteTodo(todo.id)}>Delete</button>
-        </div>
-      ))}
-    </>
+            <button className="delete" onClick={() => deleteTodo(todo.id)}>
+              ❌
+            </button>
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 
