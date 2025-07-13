@@ -1,23 +1,23 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
-  background-color: #f2f2f2;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
 }
 
 .container {
   max-width: 400px;
-  margin: 60px auto;
+  margin: 40px auto;
   padding: 20px;
-  background-color: white;
+  background: white;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
 }
 
-.heading {
-  text-align: center;
-  color: teal;
+h1 {
   margin-bottom: 20px;
+  color: #00796b;
 }
 
 .input-group {
@@ -30,53 +30,49 @@ body {
   flex: 1;
   padding: 10px;
   font-size: 16px;
-  border-radius: 5px;
   border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
 .input-group button {
-  padding: 10px 16px;
+  padding: 10px 20px;
   font-size: 16px;
-  background-color: teal;
+  background: #00796b;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  transition: transform 0.2s ease;
 }
 
 .input-group button:hover {
   transform: scale(1.05);
 }
 
-.todo-list {
-  list-style: none;
-  padding: 0;
-}
-
-.todo-list li {
-  background-color: #e8f0f7;
-  padding: 12px;
-  margin-bottom: 10px;
+.task {
+  background: #e8f0fe;
+  padding: 10px 15px;
   border-radius: 5px;
+  margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.todo-list .delete {
-  background-color: red;
-  color: white;
+.task button {
+  background: red;
   border: none;
-  padding: 6px 10px;
-  border-radius: 5px;
+  color: white;
+  font-size: 18px;
+  padding: 4px 10px;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.todo-list .delete:hover {
-  transform: scale(1.1);
+.task button:hover {
+  background: darkred;
 }
 
-/* Mobile responsiveness */
 @media (max-width: 500px) {
   .container {
     margin: 30px 15px;
@@ -90,4 +86,37 @@ body {
   .input-group button {
     width: 100%;
   }
+}
+
+.todo-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.todo-list li {
+  background: #e8f0fe;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.todo-list .delete {
+  background: transparent;
+  border: none;
+  color: #ff4d4f;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+  transition: color 0.2s ease, background 0.2s ease;
+}
+
+.todo-list .delete:hover {
+  color: white;
+  background: #ff4d4f;
 }
