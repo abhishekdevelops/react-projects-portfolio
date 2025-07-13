@@ -1,36 +1,21 @@
 import React, { useState } from "react";
+import "./App.css";
 
 function App() {
-  const [message, setMessage] = useState("");
+  const [text, setText] = useState("");
 
   return (
-    <>
-      <div
-        style={{
-          height: "100vh",
-          display: "flex",
-          flexDirection: "column",
-          justifyContent: "center",
-          alignItems: "center",
-          textAlign: "center",
-          padding: "20px",
-        }}
-      >
-        <h2 style={{ color: "red", marginBottom: "20px" }}>
-          Live Character Counter
-        </h2>
-        <textarea
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          placeholder="Enter your message"
-          rows={4}
-          style={{ width: "300px", padding: "10px", marginBottom: "15px" }}
-        />
-        <p style={{ color: "blue", fontWeight: "bold" }}>
-          Character Count: {message.length}
-        </p>
-      </div>
-    </>
+    <div className="container">
+      <h1 className="heading">Live Character Counter</h1>
+      <textarea
+        value={text}
+        onChange={(e) => setText(e.target.value)}
+        placeholder="Type your message..."
+        className="textarea"
+        rows={6}
+      />
+      <p className="count">Character Count: {text.length}</p>
+    </div>
   );
 }
 
