@@ -73,7 +73,6 @@ body {
   color: #555;
 }
 
-/* Responsive tweaks */
 @media (max-width: 480px) {
   .filter-btn {
     display: block;
