@@ -55,3 +55,16 @@ h2.black {
   transform: scale(1.03);
   transition: all 0.2s ease-in-out;
 }
+
+@media (max-width: 480px) {
+  .container {
+    margin-top: 50px;
+  }
+
+  .btn {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    margin: 10px auto;
+  }
+}
