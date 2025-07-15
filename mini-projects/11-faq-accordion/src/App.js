@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./App.css";
 
 const faqData = [
   {
@@ -40,38 +41,18 @@ function App() {
   };
 
   return (
-    <div style={{ padding: "20px", maxWidth: "600px", margin: "0 auto" }}>
-      <h1 style={{ textAlign: "center", marginBottom: "30px" }}>
-        FAQ Accordion
-      </h1>
+    <div className="faq-container">
+      <h1 className="faq-title">FAQ Accordion</h1>
 
       {faqData.map((faq) => (
-        <div
-          key={faq.id}
-          style={{
-            border: "1px solid #ddd",
-            borderRadius: "8px",
-            marginBottom: "15px",
-            padding: "15px",
-            boxShadow: "0 2px 6px rgba(0, 0, 0, 0.05)",
-            backgroundColor: "#fff",
-          }}
-        >
-          <h3
-            onClick={() => toggleAnswer(faq.id)}
-            style={{
-              cursor: "pointer",
-              margin: "0",
-              fontSize: "18px",
-              color: "#333",
-            }}
-          >
+        <div className="faq-item" key={faq.id}>
+          <h3 className="faq-question" onClick={() => toggleAnswer(faq.id)}>
             {faq.question}
           </h3>
 
-          {activeId === faq.id && (
-            <p style={{ marginTop: "10px", color: "#555" }}>{faq.answer}</p>
-          )}
+          <div className={`faq-answer ${activeId === faq.id ? "show" : ""}`}>
+            <p>{faq.answer}</p>
+          </div>
         </div>
       ))}
     </div>
