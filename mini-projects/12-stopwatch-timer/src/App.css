@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  padding: 0;
+  padding: 0 10px;
   font-family: "Segoe UI", sans-serif;
   background-color: #f0f4f8;
   display: flex;
@@ -13,13 +13,13 @@ body {
 
 .stopwatch-container {
   background-color: #fff;
-  padding: 30px 20px;
+  padding: 30px 24px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   text-align: center;
-  max-width: 360px;
-  width: 90%;
-  margin: auto;
+  max-width: 500px;
+  width: 100%;
+  margin: 20px;
   box-sizing: border-box;
 }
 
@@ -78,7 +78,7 @@ body {
   .btn {
     width: 100%;
     max-width: 300px;
-    margin: 8px auto; /* ✅ Center buttons */
+    margin: 8px auto;
     display: block;
   }
 
