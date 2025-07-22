@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./App.css";
 
 function App() {
   const [transaction, setTransaction] = useState([]);
@@ -49,44 +50,21 @@ function App() {
   };
 
   return (
-    <div
-      style={{
-        maxWidth: "500px",
-        margin: "40px auto",
-        padding: "20px",
-        borderRadius: "10px",
-        backgroundColor: "#f9f9f9",
-        boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
-      }}
-    >
-      <h2 style={{ textAlign: "center", marginBottom: "20px" }}>
-        💰 Expense Tracker
-      </h2>
-      <h2 style={{ textAlign: "center", marginBottom: "20px" }}>
-        Balance: ₹{balance.toFixed(2)}
-      </h2>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          marginBottom: "20px",
-        }}
-      >
-        <p style={{ color: "green" }}>Income: ₹{income.toFixed(2)}</p>
-        <p style={{ color: "red" }}>Expense: ₹{Math.abs(expense).toFixed(2)}</p>
+    <div className="app-container">
+      <h2 className="title">💰 Expense Tracker</h2>
+      <h2 className="balance">Balance: ₹{balance.toFixed(2)}</h2>
+
+      <div className="summary">
+        <p className="income">Income: ₹{income.toFixed(2)}</p>
+        <p className="expense">Expense: ₹{Math.abs(expense).toFixed(2)}</p>
       </div>
+
       <input
         type="number"
         value={amount}
         placeholder="Enter the amount"
         onChange={(e) => setAmount(e.target.value)}
-        style={{
-          padding: "10px",
-          width: "100%",
-          marginBottom: "10px",
-          borderRadius: "5px",
-          border: "1px solid #ccc",
-        }}
+        className="input"
       />
 
       <input
@@ -94,59 +72,22 @@ function App() {
         value={description}
         placeholder="Enter the description"
         onChange={(e) => setDescription(e.target.value)}
-        style={{
-          padding: "10px",
-          width: "100%",
-          marginBottom: "10px",
-          borderRadius: "5px",
-          border: "1px solid #ccc",
-        }}
+        className="input"
       />
 
-      <button
-        onClick={handleSubmit}
-        style={{
-          padding: "10px",
-          width: "100%",
-          backgroundColor: "#4CAF50",
-          color: "white",
-          border: "none",
-          borderRadius: "5px",
-          cursor: "pointer",
-          marginBottom: "20px",
-        }}
-      >
+      <button onClick={handleSubmit} className="add-btn">
         Add Transaction
       </button>
 
       <ul>
         {transaction.map((item) => (
-          <li
-            key={item.id}
-            style={{
-              backgroundColor: "#fff",
-              marginBottom: "10px",
-              padding: "10px 15px",
-              borderRadius: "5px",
-              boxShadow: "0 2px 5px rgba(0,0,0,0.05)",
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
-          >
+          <li key={item.id} className="list-item">
             <span>
               {item.description}: ₹{item.amount}
             </span>
             <button
               onClick={() => handleDelete(item.id)}
-              style={{
-                backgroundColor: "#f44336",
-                color: "white",
-                border: "none",
-                borderRadius: "4px",
-                padding: "5px 10px",
-                cursor: "pointer",
-              }}
+              className="delete-btn"
             >
               Delete
             </button>
@@ -156,4 +97,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
