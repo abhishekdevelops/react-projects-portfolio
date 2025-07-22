@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import "./App.css";
 
 function App() {
   const [notes, setNotes] = useState([]);
@@ -49,94 +50,40 @@ function App() {
   };
 
   return (
-    <div
-      style={{
-        maxWidth: "600px",
-        margin: "50px auto",
-        padding: "20px",
-        backgroundColor: "#f9f9f9",
-        borderRadius: "10px",
-        boxShadow: "0 4px 8px rgba(0,0,0,0.1)",
-      }}
-    >
-      <h2 style={{ textAlign: "center", marginBottom: "20px" }}>
-        📝 Notes App
-      </h2>
+    <div className="container">
+      <h2>📝 Notes App</h2>
 
-      <div style={{ display: "flex", gap: "10px", marginBottom: "20px" }}>
+      <div className="input-group">
         <input
           type="text"
           placeholder="Write a note..."
           value={input}
           onChange={(e) => setInput(e.target.value)}
-          style={{
-            flex: 1,
-            padding: "10px",
-            borderRadius: "5px",
-            border: "1px solid #ccc",
-          }}
         />
         <button
           onClick={handleAddOrUpdate}
-          style={{
-            padding: "10px 16px",
-            backgroundColor: isEditing ? "#ff9800" : "#4CAF50",
-            color: "white",
-            border: "none",
-            borderRadius: "5px",
-            cursor: "pointer",
-          }}
+          className={isEditing ? "editing" : ""}
         >
           {isEditing ? "Update Note" : "Add Note"}
         </button>
       </div>
 
-      <ul style={{ listStyle: "none", padding: 0 }}>
+      <ul className="note-list">
         {notes.map((note) => (
-          <li
-            key={note.id}
-            style={{
-              backgroundColor: "#fff",
-              padding: "12px 16px",
-              marginBottom: "10px",
-              borderRadius: "5px",
-              boxShadow: "0 2px 4px rgba(0,0,0,0.05)",
-              display: "flex",
-              justifyContent: "space-between",
-              alignItems: "center",
-            }}
-          >
+          <li className="note-item" key={note.id}>
             <span>{note.text}</span>
-            <div>
+            <div className="note-actions">
               <button
+                className="edit"
                 onClick={() => {
                   setInput(note.text);
                   setIsEditing(true);
                   setEditId(note.id);
                 }}
-                style={{
-                  marginRight: "10px",
-                  backgroundColor: "#2196F3",
-                  color: "white",
-                  border: "none",
-                  padding: "6px 12px",
-                  borderRadius: "4px",
-                  cursor: "pointer",
-                }}
               >
                 Edit
               </button>
-              <button
-                onClick={() => handleDelete(note.id)}
-                style={{
-                  backgroundColor: "#f44336",
-                  color: "white",
-                  border: "none",
-                  padding: "6px 12px",
-                  borderRadius: "4px",
-                  cursor: "pointer",
-                }}
-              >
+              <button className="delete" onClick={() => handleDelete(note.id)}>
                 Delete
               </button>
             </div>
