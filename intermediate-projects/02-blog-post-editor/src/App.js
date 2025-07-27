@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PostForm from "./components/PostForm";
 import PostList from "./components/PostList";
+import "./App.css";
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -33,8 +34,8 @@ function App() {
   };
 
   return (
-    <div style={{ maxWidth: "600px", margin: "40px auto", padding: "20px" }}>
-      <h2>📝 Blog Post Editor</h2>
+    <div className="app-container">
+      <h2 className="title">📝 Blog Post Editor</h2>
       <PostForm
         addPost={addPost}
         updatePost={updatePost}

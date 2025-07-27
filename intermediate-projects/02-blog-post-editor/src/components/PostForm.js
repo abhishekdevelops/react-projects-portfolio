@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import "../App.css";
 
 function PostForm({ addPost, updatePost, currentPost }) {
   const [title, setTitle] = useState("");
@@ -29,31 +30,22 @@ function PostForm({ addPost, updatePost, currentPost }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="post-form">
       <input
         type="text"
         placeholder="Post title"
         value={title}
         onChange={(e) => setTitle(e.target.value)}
-        style={{ width: "100%", padding: "10px", marginBottom: "10px" }}
+        className="input"
       />
       <textarea
         placeholder="Post content"
         value={content}
         onChange={(e) => setContent(e.target.value)}
         rows="5"
-        style={{ width: "100%", padding: "10px", marginBottom: "10px" }}
+        className="textarea"
       />
-      <button
-        type="submit"
-        style={{
-          padding: "10px 20px",
-          backgroundColor: "#007bff",
-          color: "white",
-          border: "none",
-          borderRadius: "5px",
-        }}
-      >
+      <button type="submit" className="submit-btn">
         {currentPost ? "Update Post" : "Add Post"}
       </button>
     </form>

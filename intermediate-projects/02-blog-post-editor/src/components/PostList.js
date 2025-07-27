@@ -1,27 +1,24 @@
 import React from "react";
+import "../App.css";
 
 function PostList({ posts, onEdit, onDelete }) {
   if (posts.length === 0) {
-    return <p style={{ color: "#666" }}>No posts yet</p>;
+    return <p className="no-posts">No posts yet</p>;
   }
 
   return (
-    <div>
+    <div className="post-list">
       {posts.map((post) => (
-        <div
-          key={post.id}
-          style={{
-            padding: "10px",
-            marginBottom: "10px",
-            background: "#f9f9f9",
-            borderRadius: "5px",
-          }}
-        >
+        <div key={post.id} className="post-item">
           <h3>{post.title}</h3>
           <p>{post.content}</p>
-          <div style={{ display: "flex", gap: "10px" }}>
-            <button onClick={() => onEdit(post)}>✏️ Edit</button>
-            <button onClick={() => onDelete(post.id)}>🗑️ Delete</button>
+          <div className="post-actions">
+            <button onClick={() => onEdit(post)} className="edit-btn">
+              ✏️ Edit
+            </button>
+            <button onClick={() => onDelete(post.id)} className="delete-btn">
+              🗑️ Delete
+            </button>
           </div>
         </div>
       ))}
