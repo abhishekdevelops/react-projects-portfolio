@@ -1,24 +1,13 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
 import Navbar from "./Navbar";
-import Home from "./Home";
-import Posts from "./Posts";
-import Comments from "./Comments";
-import Users from "./Users";
-import Todos from "./Todos";
+import { Outlet } from "react-router-dom";
 
 const Dashboard = () => {
   return (
     <>
       <Navbar />
       <div className="container mt-4">
-        <Routes>
-          <Route path="home" element={<Home />} />
-          <Route path="posts" element={<Posts />} />
-          <Route path="comments" element={<Comments />} />
-          <Route path="users" element={<Users />} />
-          <Route path="todos" element={<Todos />} />
-        </Routes>
+        <Outlet />
       </div>
     </>
   );

@@ -5,4 +5,23 @@
   border-radius: 10px;
   background-color: #ffffff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+@media (max-width: 480px) {
+  .login-box {
+    padding: 20px;
+  }
+
+  .login-box h2 {
+    font-size: 1.4rem;
+  }
+
+  .form-control {
+    font-size: 0.95rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+  }
 }
