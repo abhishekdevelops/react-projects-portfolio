@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./App.css";
 
 function App() {
   const [searchTerm, setSearchTerm] = useState("");
@@ -11,7 +12,7 @@ function App() {
 
     setLoading(true);
     setError("");
-    setMovies([]); // optional: clear previous results
+    setMovies([]);
 
     fetch(`https://www.omdbapi.com/?s=${searchTerm}&apikey=a42ce400`)
       .then((res) => res.json())
@@ -31,73 +32,32 @@ function App() {
   };
 
   return (
-    <div style={{ maxWidth: "800px", margin: "30px auto", padding: "20px" }}>
-      <h2 style={{ textAlign: "center", marginBottom: "20px" }}>
-        🎬 Movie Search App
-      </h2>
+    <div className="app-container">
+      <h2 className="title">🎬 Movie Search App</h2>
+
       <input
         type="text"
         placeholder="Enter movie name"
         value={searchTerm}
         onChange={(e) => setSearchTerm(e.target.value)}
-        style={{ width: "100%", padding: "10px", marginBottom: "10px" }}
+        className="search-input"
       />
 
-      <button
-        onClick={fetchMovies}
-        style={{
-          width: "100%",
-          padding: "10px",
-          marginBottom: "20px",
-          backgroundColor: "#007bff",
-          color: "white",
-          border: "none",
-          cursor: "pointer",
-        }}
-      >
+      <button onClick={fetchMovies} className="search-btn">
         Search
       </button>
 
-      {loading && <p style={{ textAlign: "center" }}>Loading...</p>}
+      {loading && <p className="loading-text">Loading...</p>}
 
-      {error && (
-        <p style={{ color: "red", textAlign: "center", marginBottom: "20px" }}>
-          {error}
-        </p>
-      )}
+      {error && <p className="error-text">{error}</p>}
 
-      <div
-        style={{
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fill, minmax(200px, 1fr))",
-          gap: "20px",
-        }}
-      >
+      <div className="movie-grid">
         {movies.map((movie) => (
-          <div
-            key={movie.imdbID}
-            style={{
-              border: "1px solid #ddd",
-              borderRadius: "8px",
-              padding: "10px",
-              textAlign: "center",
-              backgroundColor: "#f9f9f9",
-            }}
-          >
-            <h3 style={{ fontSize: "16px", margin: "10px 0" }}>
-              {movie.Title}
-            </h3>
+          <div key={movie.imdbID} className="movie-card">
+            <h3>{movie.Title}</h3>
             <p>{movie.Year}</p>
             {movie.Poster !== "N/A" && (
-              <img
-                src={movie.Poster}
-                alt={movie.Title}
-                style={{
-                  width: "100%",
-                  height: "300px",
-                  objectFit: "cover",
-                }}
-              />
+              <img src={movie.Poster} alt={movie.Title} />
             )}
           </div>
         ))}
