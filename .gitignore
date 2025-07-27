@@ -15,3 +15,5 @@ dist/
 # Ignore all local projects you don’t want Git to track
 mini-projects/rough-practice/
 project-hub
+
+focus-chat
