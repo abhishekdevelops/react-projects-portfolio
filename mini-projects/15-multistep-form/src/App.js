@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./App.css";
 
 function App() {
   const [step, setStep] = useState(1);
@@ -9,16 +10,9 @@ function App() {
     email: "",
     phone: "",
   });
+
   return (
-    <div
-      style={{
-        maxWidth: "400px",
-        margin: "40px auto",
-        padding: "20px",
-        border: "1px solid #ccc",
-        borderRadius: "10px",
-      }}
-    >
+    <div className="form-container">
       {step === 1 && (
         <>
           <h2>Step 1: Personal Details</h2>
@@ -27,14 +21,14 @@ function App() {
             placeholder="Enter your name"
             value={formData.name}
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
-            style={{ width: "100%", padding: "10px", marginBottom: "10px" }}
+            className="input"
           />
           <input
             type="number"
             placeholder="Enter your age"
             value={formData.age}
             onChange={(e) => setFormData({ ...formData, age: e.target.value })}
-            style={{ width: "100%", padding: "10px", marginBottom: "10px" }}
+            className="input"
           />
           <button
             onClick={() => {
@@ -42,16 +36,9 @@ function App() {
                 alert("Please fill out both name and age");
                 return;
               }
-
               setStep(2);
             }}
-            style={{
-              padding: "10px",
-              width: "100%",
-              backgroundColor: "#4CAF50",
-              color: "#fff",
-              border: "none",
-            }}
+            className="btn next-btn"
           >
             Next
           </button>
@@ -61,7 +48,6 @@ function App() {
       {step === 2 && (
         <>
           <h2>Step 2: Contact Details</h2>
-
           <input
             type="email"
             placeholder="Enter your email"
@@ -69,13 +55,8 @@ function App() {
             onChange={(e) =>
               setFormData({ ...formData, email: e.target.value })
             }
-            style={{
-              width: "100%",
-              padding: "10px",
-              marginBottom: "10px",
-            }}
+            className="input"
           />
-
           <input
             type="number"
             placeholder="Enter your phone number"
@@ -83,33 +64,13 @@ function App() {
             onChange={(e) =>
               setFormData({ ...formData, phone: e.target.value })
             }
-            style={{
-              width: "100%",
-              padding: "10px",
-              marginBottom: "10px",
-            }}
+            className="input"
           />
 
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "space-between",
-              gap: "10px",
-            }}
-          >
-            <button
-              onClick={() => setStep(1)}
-              style={{
-                flex: 1,
-                padding: "10px",
-                backgroundColor: "#aaa",
-                color: "#fff",
-                border: "none",
-              }}
-            >
+          <div className="btn-group">
+            <button onClick={() => setStep(1)} className="btn back-btn">
               Back
             </button>
-
             <button
               onClick={() => {
                 if (!formData.email.trim() || !formData.phone.trim()) {
@@ -125,13 +86,7 @@ function App() {
                 alert("Form submitted successfully!");
                 console.log("Submitted Data:", formData);
               }}
-              style={{
-                flex: 1,
-                padding: "10px",
-                backgroundColor: "#4CAF50",
-                color: "#fff",
-                border: "none",
-              }}
+              className="btn submit-btn"
             >
               Submit
             </button>
@@ -141,4 +96,5 @@ function App() {
     </div>
   );
 }
+
 export default App;
